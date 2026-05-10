@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto Bullismo e Cyborg - Brainstorming</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .disciplines {
+            font-size: 0.9em;
+            font-style: italic;
+            margin-top: 10px;
+            color: #bdc3c7;
+        }
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Stile Post-it */
+        .note {
+            padding: 20px;
+            min-height: 180px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+            transform: rotate(-1deg);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-bottom-right-radius: 40px 5px;
+        }
+
+        .note:nth-child(even) { transform: rotate(1.5deg); }
+        .note:nth-child(3n) { transform: rotate(-2deg); }
+        .note:hover { transform: scale(1.05) rotate(0deg); z-index: 10; }
+
+        /* Colori Categorie */
+        .personal { background-color: #fff176; } /* Giallo: Vissuto */
+        .concept { background-color: #81d4fa; }  /* Blu: Teoria/Scienze Umane */
+        .conflict { background-color: #ffab91; } /* Arancio: Dinamiche di gruppo */
+        .hope { background-color: #a5d6a7; }     /* Verde: Resilienza */
+
+        .content {
+            font-size: 1.1em;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .author {
+            font-weight: bold;
+            text-align: right;
+            font-family: 'Courier New', Courier, monospace;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            padding-top: 5px;
+        }
+
+        .tag {
+            font-size: 0.7em;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+            background: rgba(255,255,255,0.5);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🧠 Brainstorming: Bullismo e Dinamiche Sociali</h1>
+    <div class="disciplines">
+        Coinvolgimento: Ed. Civica | Scienze Umane | Italiano | Diritto
+    </div>
+</header>
+
+<div class="board">
+    <div class="note personal">
+        <span class="tag">Vissuto</span>
+        <div class="content">"Non odio le persone che mi hanno insultato perché mi hanno resa la persona che sono ora, però ci penso tanto."</div>
+        <div class="author">— Jenny</div>
+    </div>
+
+    <div class="note concept">
+        <span class="tag">Scienze Umane</span>
+        <div class="content"><strong>Gruppo vs Branco:</strong> Il gruppo unisce, il branco divide.</div>
+        <div class="author">— Jenny</div>
+    </div>
+
+    <div class="note hope">
+        <span class="tag">Resilienza</span>
+        <div class="content">"Ti fai scivolare addosso le critiche. Sto bene se ascolto la musica che mi piace."</div>
+        <div class="author">— Agnese</div>
+    </div>
+
+    <div class="note conflict">
+        <span class="tag">Dinamiche</span>
+        <div class="content">"Fanno male le critiche di quelli che ritieni gli amici più stretti."</div>
+        <div class="author">— Ilaria</div>
+    </div>
+
+    <div class="note conflict">
+        <span class="tag">Opinione</span>
+        <div class="content">"Abbiamo problemi diversi, i loro problemi sono inutili."</div>
+        <div class="author">— Isacco</div>
+    </div>
+
+    <div class="note personal">
+        <span class="tag">Incomunicabilità</span>
+        <div class="content">"Ti capisco? Ma non puoi capire davvero!"</div>
+        <div class="author">— Noemi</div>
+    </div>
+
+    <div class="note concept">
+        <span class="tag">Sociologia</span>
+        <div class="content">"Nei maschi c’è più conformismo."</div>
+        <div class="author">— Camilla</div>
+    </div>
+
+    <div class="note conflict">
+        <span class="tag">Diritto/Sociale</span>
+        <div class="content">"Piuttosto che stare solo, accetto il gruppo."</div>
+        <div class="author">— Giulia</div>
+    </div>
+
+    <div class="note personal">
+        <span class="tag">Fragilità</span>
+        <div class="content">"Mi sento sfigato se sono solo."</div>
+        <div class="author">— Angela</div>
+    </div>
+
+    <div class="note hope">
+        <span class="tag">Crescita</span>
+        <div class="content">"L’infanzia è una corazza."</div>
+        <div class="author">— Jenny</div>
+    </div>
+</div>
+
+</body>
+</html>
